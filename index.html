@@ -130,8 +130,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      .location-container {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
   </head>
   <body>
+    <div class="location-container">
+      <button onclick="getLocation()">Press To Get My Current Location</button>
+    </div>
     <p id="location"></p>
     <script>
       function getLocation() {
@@ -147,9 +157,9 @@
           "<br>Longitude: " + position.coords.longitude;
       }
     </script>
-    <button onclick="getLocation()">Press To Get My Current Location</button>
   </body>
 </html>
+
 <!DOCTYPE html>
 <html>
   <head>
